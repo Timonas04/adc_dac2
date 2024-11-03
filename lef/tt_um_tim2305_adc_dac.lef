@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO top_dac_adc
+MACRO tt_um_tim2305_adc_dac
   CLASS BLOCK ;
-  FOREIGN top_dac_adc ;
+  FOREIGN tt_um_tim2305_adc_dac ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -60400,7 +60400,6 @@ MACRO top_dac_adc
         RECT 73.520 52.520 78.090 53.050 ;
         RECT 73.520 52.480 74.380 52.520 ;
         RECT 77.560 52.500 78.090 52.520 ;
-        RECT 73.220 50.240 74.080 50.920 ;
         RECT 93.910 49.980 94.660 50.630 ;
         RECT 74.300 49.700 94.660 49.980 ;
         RECT 109.000 49.780 109.750 50.710 ;
@@ -60744,6 +60743,6 @@ MACRO top_dac_adc
         RECT 132.490 0.000 133.390 1.000 ;
         RECT 151.770 0.225 151.810 1.000 ;
   END
-END top_dac_adc
+END tt_um_tim2305_adc_dac
 END LIBRARY
 
