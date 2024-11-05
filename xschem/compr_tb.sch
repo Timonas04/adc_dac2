@@ -22,8 +22,13 @@ ylabmag=1.0
 node="in-
 in+
 out
-out_parax"
-color="4 5 6 12"
+out_parax
+m.x2.xm1.msky130_fd_pr__nfet_01v8#dbody
+m.x1.xm1.msky130_fd_pr__nfet_01v8#dbody
+m.x2.xm21.msky130_fd_pr__pfet_01v8#dbody
+m.x2.xm8.msky130_fd_pr__pfet_01v8#dbody
+m.x2.xm3.msky130_fd_pr__pfet_01v8#dbody"
+color="4 5 6 12 10 10 11 11 11"
 dataset=-1
 unitx=1
 logx=0
@@ -59,9 +64,9 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/compr_tb.raw tran"
 }
 C {/home/ttuser/Documents/aprx_adc/compr.sym} 350 -470 0 0 {name=x2
-schematic=compr_layout
-spice_sym_def="tcleval(.include [abs_sym_path compr_layout.cir])"
-tclcommand="textwindow [abs_sym_path compr_layout.cir]"}
+schematic=compr
+spice_sym_def="tcleval(.include [abs_sym_path compr.spice])"
+tclcommand="textwindow [abs_sym_path compr.spice]"}
 C {lab_pin.sym} 200 -480 0 0 {name=p7 sig_type=std_logic lab=in+}
 C {lab_pin.sym} 200 -460 0 0 {name=p8 sig_type=std_logic lab=in-}
 C {lab_pin.sym} 200 -500 0 0 {name=p9 sig_type=std_logic lab=vdd}

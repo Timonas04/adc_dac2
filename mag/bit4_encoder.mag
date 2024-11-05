@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730718415
+timestamp 1730842790
 << viali >>
 rect 2881 9129 2915 9163
 rect 4997 9129 5031 9163
@@ -4893,15 +4893,15 @@ rect 5020 2144 5036 2208
 rect 5100 2144 5116 2208
 rect 5180 2144 5188 2208
 rect 4868 2128 5188 2144
-use sky130_fd_sc_hd__nor2_1  _39_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__nor2_1  _39_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 4048 0 1 5440
 box -38 -48 314 592
-use sky130_fd_sc_hd__and2b_2  _40_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__and2b_2  _40_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 5980 0 1 6528
 box -38 -48 682 592
-use sky130_fd_sc_hd__inv_2  _41_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__inv_2  _41_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 5428 0 1 7616
 box -38 -48 314 592
@@ -4913,11 +4913,11 @@ use sky130_fd_sc_hd__inv_2  _43_
 timestamp 1730493024
 transform 1 0 5980 0 -1 8704
 box -38 -48 314 592
-use sky130_fd_sc_hd__and2b_1  _44_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__and2b_1  _44_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 7360 0 1 2176
 box -38 -48 590 592
-use sky130_fd_sc_hd__o21ba_1  _45_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__o21ba_1  _45_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 7268 0 1 3264
 box -38 -48 774 592
@@ -4941,11 +4941,11 @@ use sky130_fd_sc_hd__o21ba_1  _50_
 timestamp 1730493024
 transform 1 0 6348 0 -1 7616
 box -38 -48 774 592
-use sky130_fd_sc_hd__or2_1  _51_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__or2_1  _51_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 6992 0 1 7616
 box -38 -48 498 592
-use sky130_fd_sc_hd__o31a_1  _52_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__o31a_1  _52_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 6348 0 -1 8704
 box -38 -48 682 592
@@ -4953,7 +4953,7 @@ use sky130_fd_sc_hd__nor2_1  _53_
 timestamp 1730493024
 transform -1 0 7268 0 1 3264
 box -38 -48 314 592
-use sky130_fd_sc_hd__o21a_1  _54_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__o21a_1  _54_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 7820 0 -1 3264
 box -38 -48 590 592
@@ -4977,15 +4977,15 @@ use sky130_fd_sc_hd__o31a_1  _59_
 timestamp 1730493024
 transform 1 0 6164 0 1 6528
 box -38 -48 682 592
-use sky130_fd_sc_hd__or3_1  _60_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__or3_1  _60_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 6348 0 -1 6528
 box -38 -48 498 592
-use sky130_fd_sc_hd__mux2_1  _61_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__mux2_1  _61_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 3772 0 1 7616
 box -38 -48 866 592
-use sky130_fd_sc_hd__or4_1  _62_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__or4_1  _62_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 5704 0 -1 7616
 box -38 -48 590 592
@@ -4993,7 +4993,7 @@ use sky130_fd_sc_hd__or4_1  _63_
 timestamp 1730493024
 transform -1 0 8004 0 -1 4352
 box -38 -48 590 592
-use sky130_fd_sc_hd__a31o_1  _64_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__a31o_1  _64_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 6992 0 -1 5440
 box -38 -48 682 592
@@ -5001,7 +5001,7 @@ use sky130_fd_sc_hd__mux2_1  _65_
 timestamp 1730493024
 transform 1 0 5244 0 -1 3264
 box -38 -48 866 592
-use sky130_fd_sc_hd__or4b_1  _66_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__or4b_1  _66_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 6624 0 1 5440
 box -38 -48 774 592
@@ -5033,7 +5033,7 @@ use sky130_fd_sc_hd__or2_1  _73_
 timestamp 1730493024
 transform 1 0 4692 0 1 7616
 box -38 -48 498 592
-use sky130_fd_sc_hd__o41a_1  _74_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__o41a_1  _74_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 4876 0 1 5440
 box -38 -48 866 592
@@ -5049,7 +5049,7 @@ use sky130_fd_sc_hd__mux2_1  _77_
 timestamp 1730493024
 transform 1 0 1932 0 -1 3264
 box -38 -48 866 592
-use sky130_fd_sc_hd__dfxtp_1  _78_ ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__dfxtp_1  _78_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 2668 0 -1 5440
 box -38 -48 1510 592
@@ -5105,7 +5105,7 @@ use sky130_fd_sc_hd__dfxtp_1  _91_
 timestamp 1730493024
 transform -1 0 2852 0 1 3264
 box -38 -48 1510 592
-use sky130_fd_sc_hd__clkbuf_16  clkbuf_0_clk ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkbuf_16  clkbuf_0_clk $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 3496 0 -1 6528
 box -38 -48 1878 592
@@ -5117,15 +5117,15 @@ use sky130_fd_sc_hd__clkbuf_16  clkbuf_1_1__f_clk
 timestamp 1730493024
 transform -1 0 4692 0 -1 7616
 box -38 -48 1878 592
-use sky130_ef_sc_hd__decap_12  FILLER_0_3 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_ef_sc_hd__decap_12  FILLER_0_3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 1380 0 1 2176
 box -38 -48 1142 592
-use sky130_fd_sc_hd__decap_8  FILLER_0_15 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__decap_8  FILLER_0_15 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 2484 0 1 2176
 box -38 -48 774 592
-use sky130_fd_sc_hd__fill_1  FILLER_0_23 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__fill_1  FILLER_0_23 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 3220 0 1 2176
 box -38 -48 130 592
@@ -5133,7 +5133,7 @@ use sky130_fd_sc_hd__fill_1  FILLER_0_29
 timestamp 1730493024
 transform 1 0 3772 0 1 2176
 box -38 -48 130 592
-use sky130_fd_sc_hd__fill_2  FILLER_0_54 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__fill_2  FILLER_0_54 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 6072 0 1 2176
 box -38 -48 222 592
@@ -5157,7 +5157,7 @@ use sky130_fd_sc_hd__decap_8  FILLER_1_18
 timestamp 1730493024
 transform 1 0 2760 0 -1 3264
 box -38 -48 774 592
-use sky130_fd_sc_hd__decap_3  FILLER_1_26 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__decap_3  FILLER_1_26 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 3496 0 -1 3264
 box -38 -48 314 592
@@ -5193,7 +5193,7 @@ use sky130_fd_sc_hd__fill_2  FILLER_3_17
 timestamp 1730493024
 transform 1 0 2668 0 -1 4352
 box -38 -48 222 592
-use sky130_fd_sc_hd__decap_4  FILLER_3_36 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__decap_4  FILLER_3_36 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 4416 0 -1 4352
 box -38 -48 406 592
@@ -5205,7 +5205,7 @@ use sky130_fd_sc_hd__fill_1  FILLER_4_27
 timestamp 1730493024
 transform 1 0 3588 0 1 4352
 box -38 -48 130 592
-use sky130_fd_sc_hd__decap_6  FILLER_4_52 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__decap_6  FILLER_4_52 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 5888 0 1 4352
 box -38 -48 590 592
@@ -5341,7 +5341,7 @@ use sky130_fd_sc_hd__decap_3  FILLER_12_63
 timestamp 1730493024
 transform 1 0 6900 0 1 8704
 box -38 -48 314 592
-use sky130_fd_sc_hd__dlygate4sd3_1  hold1 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__dlygate4sd3_1  hold1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 7084 0 -1 3264
 box -38 -48 774 592
@@ -5397,11 +5397,11 @@ use sky130_fd_sc_hd__dlygate4sd3_1  hold14
 timestamp 1730493024
 transform -1 0 5612 0 1 5440
 box -38 -48 774 592
-use sky130_fd_sc_hd__clkbuf_1  input1 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkbuf_1  input1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 6164 0 1 3264
 box -38 -48 314 592
-use sky130_fd_sc_hd__buf_1  input2 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__buf_1  input2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform -1 0 8004 0 1 8704
 box -38 -48 314 592
@@ -5457,7 +5457,7 @@ use sky130_fd_sc_hd__buf_1  input15
 timestamp 1730493024
 transform -1 0 8004 0 -1 8704
 box -38 -48 314 592
-use sky130_fd_sc_hd__buf_2  output16 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__buf_2  output16 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 5612 0 -1 8704
 box -38 -48 406 592
@@ -5609,7 +5609,7 @@ use sky130_fd_sc_hd__decap_3  PHY_EDGE_ROW_12_Right_12
 timestamp 1730493024
 transform -1 0 8280 0 1 8704
 box -38 -48 314 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_TAPCELL_ROW_0_26 ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_TAPCELL_ROW_0_26 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1730493024
 transform 1 0 3680 0 1 2176
 box -38 -48 130 592
