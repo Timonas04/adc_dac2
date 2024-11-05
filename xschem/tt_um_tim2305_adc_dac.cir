@@ -1,0 +1,90 @@
+* NGSPICE file created from tt_um_tim2305_adc_dac.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_0p35_MGD972 a_n35_n486# a_n165_n616# a_n35_54#
+X0 a_n35_54# a_n35_n486# a_n165_n616# sky130_fd_pr__res_xhigh_po_0p35 l=0.7
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_64Z3AY a_15_n131# a_n175_n243# a_n33_91# a_n73_n131#
+X0 a_15_n131# a_n33_91# a_n73_n131# a_n175_n243# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_3H2EVM a_n100_n897# a_100_n800# w_n296_n1019# a_n158_n800#
+X0 a_100_n800# a_n100_n897# a_n158_n800# w_n296_n1019# sky130_fd_pr__pfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_AHMAL2 a_n260_n574# a_100_n400# a_n158_n400# a_n100_n488#
+X0 a_100_n400# a_n100_n488# a_n158_n400# a_n260_n574# sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_AHRV9L a_n258_n400# a_n200_n488# a_n360_n574#
++ a_200_n400#
+X0 a_200_n400# a_n200_n488# a_n258_n400# a_n360_n574# sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_GWPMZG a_n200_n897# a_200_n800# w_n396_n1019#
++ a_n258_n800#
+X0 a_200_n800# a_n200_n897# a_n258_n800# w_n396_n1019# sky130_fd_pr__pfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MGSNAN a_n73_n336# a_n33_295# w_n211_n484#
+X0 a_15_n336# a_n33_295# a_n73_n336# w_n211_n484# sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+.ends
+
+.subckt compr out vdd in+ in- vss
+XXM1 out vss m1_2518_1378# vss sky130_fd_pr__nfet_01v8_64Z3AY
+XXM3 m1_1460_732# vdd vdd m1_1264_902# sky130_fd_pr__pfet_01v8_3H2EVM
+XXM4 vss vss m1_1264_902# m1_1460_732# sky130_fd_pr__nfet_01v8_lvt_AHMAL2
+XXM5 m1_1824_498# m1_1824_498# vss vss sky130_fd_pr__nfet_01v8_lvt_AHRV9L
+XXM6 m1_2518_1378# m1_2518_1378# vss vss sky130_fd_pr__nfet_01v8_lvt_AHRV9L
+XXM7 in- m1_2324_1380# vdd m1_1824_498# sky130_fd_pr__pfet_01v8_lvt_GWPMZG
+XXM8 m1_1264_902# vdd vdd m1_2324_1380# sky130_fd_pr__pfet_01v8_3H2EVM
+XXM9 in+ m1_2324_1380# vdd m1_2518_1378# sky130_fd_pr__pfet_01v8_lvt_GWPMZG
+XXM21 out m1_2518_1378# vdd sky130_fd_pr__pfet_01v8_MGSNAN
+R0 m1_1264_902# m1_1264_902# sky130_fd_pr__res_generic_m1 w=0.42 l=7.37
+.ends
+
+.subckt flash_adc compr_0/in- compr_9/vdd compr_9/in+ compr_14/vdd compr_0/out compr_4/vdd
++ VSUBS
+XXR1 compr_13/in- VSUBS compr_14/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR2 compr_5/in- VSUBS compr_6/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR10 compr_6/in- VSUBS compr_7/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR3 compr_11/in- VSUBS compr_12/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR11 compr_10/in- VSUBS compr_11/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR4 compr_14/in- VSUBS compr_14/vdd sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR5 compr_7/in- VSUBS compr_8/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR12 compr_8/in- VSUBS compr_9/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR6 compr_0/in- VSUBS compr_1/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR13 VSUBS VSUBS compr_0/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR14 compr_1/in- VSUBS compr_2/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR7 compr_9/in- VSUBS compr_10/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR15 compr_3/in- VSUBS compr_4/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR8 compr_4/in- VSUBS compr_5/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR16 compr_2/in- VSUBS compr_3/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR9 compr_12/in- VSUBS compr_13/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr_0 compr_0/out compr_4/vdd compr_9/in+ compr_0/in- VSUBS compr
+Xcompr_1 compr_1/out compr_4/vdd compr_9/in+ compr_1/in- VSUBS compr
+Xcompr_2 compr_2/out compr_4/vdd compr_9/in+ compr_2/in- VSUBS compr
+Xcompr_3 compr_3/out compr_4/vdd compr_9/in+ compr_3/in- VSUBS compr
+Xcompr_4 compr_4/out compr_4/vdd compr_9/in+ compr_4/in- VSUBS compr
+Xcompr_5 compr_5/out compr_9/vdd compr_9/in+ compr_5/in- VSUBS compr
+Xcompr_6 compr_6/out compr_9/vdd compr_9/in+ compr_6/in- VSUBS compr
+Xcompr_7 compr_7/out compr_9/vdd compr_9/in+ compr_7/in- VSUBS compr
+Xcompr_10 compr_10/out compr_14/vdd compr_9/in+ compr_10/in- VSUBS compr
+Xcompr_8 compr_8/out compr_9/vdd compr_9/in+ compr_8/in- VSUBS compr
+Xcompr_11 compr_11/out compr_14/vdd compr_9/in+ compr_11/in- VSUBS compr
+Xcompr_9 compr_9/out compr_9/vdd compr_9/in+ compr_9/in- VSUBS compr
+Xcompr_13 compr_13/out compr_14/vdd compr_9/in+ compr_13/in- VSUBS compr
+Xcompr_12 compr_12/out compr_14/vdd compr_9/in+ compr_12/in- VSUBS compr
+Xcompr_14 compr_14/out compr_14/vdd compr_9/in+ compr_14/in- VSUBS compr
+.ends
+
+.subckt tt_um_tim2305_adc_dac clk ena rst_n ua[1] ua[2] ua[3] ua[4] ua[7] ui_in[0]
++ ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0] uio_in[1]
++ uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[4] uio_oe[5]
++ uio_oe[6] uio_oe[7] uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5]
++ uio_out[6] uio_out[7] uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5]
++ uo_out[6] uo_out[7] ua[5] ua[6]
+Xflash_adc_0 ua[4] ua[5] ua[3] ua[5] flash_adc_0/compr_0/out ua[5] ua[6] flash_adc
+R0 flash_adc_0/compr_0/out ua[7] sky130_fd_pr__res_generic_m2 w=0.305 l=0.35
+.ends
+
