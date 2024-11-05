@@ -83,7 +83,7 @@ logx=0
 logy=0
 }
 B 2 1920 -720 2720 -320 {flags=graph
-y1=-2.2e-05
+y1=0
 y2=1.8
 ypos1=0
 ypos2=2
@@ -96,18 +96,16 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="ua
-out0
-gnd0
-vcc0
-in-0
-in+0"
-color="4 6 5 8 9 10"
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+color="4 4 4"
+node="x1.xflash_adc_0.bit4_encoder_0/vpwr
+x1.flash_adc_0/bit4_encoder_0/vpwr
+ua"}
 N 480 -350 500 -350 {
 lab=GND}
 N 500 -710 500 -370 {
@@ -118,6 +116,7 @@ C {code.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
 .tran 100p 1u
 .save all
 .lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/ttuser/Documents/github_project/adc_dac2/xschem/tt_um_tim2305_adc_dac.cir
 "}
 C {vsource.sym} 30 -480 0 0 {name=V3 value="pwl(0 0 1u 1.8)" savecurrent=false}
 C {lab_pin.sym} 30 -510 0 1 {name=p15 sig_type=std_logic lab=ua}
@@ -128,9 +127,7 @@ C {gnd.sym} 30 -560 0 0 {name=l1 lab=GND}
 C {gnd.sym} 30 -450 0 0 {name=l2 lab=GND}
 C {gnd.sym} 30 -330 0 0 {name=l4 lab=GND}
 C {/home/ttuser/Documents/github_project/adc_dac2/xschem/tile_pinout.sym} 650 -440 0 0 {name=x1
-schematic=tt_um_tim2305_adc_dac
-spice_sym_def="tcleval(.include [abs_sym_path tt_um_tim2305_adc_dac.cir])"
-tclcommand="textwindow [abs_sym_path tt_um_tim2305_adc_dac.cir]"}
+schematic=tt_um_tim2305_adc_dac}
 C {lab_pin.sym} 500 -750 2 1 {name=p1 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 500 -730 2 1 {name=p3 sig_type=std_logic lab=clk}
 C {lab_pin.sym} 800 -750 0 1 {name=p16 sig_type=std_logic lab=ua}

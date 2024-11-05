@@ -14,6 +14,8 @@ rect 2936 2004 3562 2014
 << viali >>
 rect 2984 2052 3508 2440
 << metal1 >>
+rect 800 0 900 100 0
+rect 1000 0 1100 100 0
 rect -9600 13122 -8604 13310
 rect -6604 13110 -5608 13298
 rect -3582 13114 -2586 13302
@@ -358,6 +360,14 @@ rect -3772 2562 -3720 2614
 rect -764 2546 -712 2598
 rect 2178 2484 2378 2576
 << metal2 >>
+rect 0 0 100 100
+rect 400 0 500 100
+rect 1200 0 1300 100
+rect 1600 0 1700 100
+rect 2000 0 2100 100
+rect 2200 0 2300 100
+rect 2400 0 2500 100
+rect 2600 0 2700 100
 rect -5387 13331 2931 13369
 rect -5387 13265 -5349 13331
 rect -11145 13227 -5349 13265
@@ -789,6 +799,11 @@ rect -124 5384 -68 5440
 rect -13442 4602 -13386 4658
 rect -13318 3922 -13262 3978
 << metal3 >>
+rect 200 0 300 100
+rect 600 0 700 100
+rect 1400 0 1500 100
+rect 1800 0 1900 100
+rect 2800 0 2900 100
 rect -13560 11458 -13472 11474
 rect -13560 11402 -13542 11458
 rect -13486 11402 -13472 11458
@@ -874,6 +889,13 @@ rect -13323 3922 -13318 3978
 rect -13262 3922 -12950 3978
 rect -13323 3917 -12950 3922
 rect -13316 3916 -12950 3917
+<< metal4 >>
+rect 0 0 100 100 0
+rect 200 0 300 100 0
+rect 400 0 500 100 0
+rect 600 0 700 100 0
+
+
 use bit4_encoder  bit4_encoder_0 ~/Documents/github_project/adc_dac2/mag
 timestamp 1730718415
 transform 1 0 -22008 0 1 1842
@@ -1003,6 +1025,34 @@ timestamp 1730493024
 transform 1 0 3107 0 1 4270
 box -201 -652 201 652
 << labels >>
-flabel metal2 -220 7344 -96 7464 0 FreeSans 160 0 0 0 out
+flabel metal2 s 0 0 100 100 0 FreeSans 480 90 0 0 bus00
+port 0 nsew
+flabel metal3 s 200 0 300 100 0 FreeSans 480 90 0 0 bus01
+port 1 nsew
+flabel metal2 s 400 0 500 100 0 FreeSans 480 90 0 0 bus02
+port 2 nsew
+flabel metal3 s 600 0 700 100 0 FreeSans 480 90 0 0 bus03
 port 3 nsew
+flabel metal2 s 1200 0 1300 100 0 FreeSans 480 90 0 0 bus10
+port 4 nsew
+flabel metal3 s 1400 0 1500 100 0 FreeSans 480 90 0 0 bus11
+port 5 nsew
+flabel metal2 s 1600 0 1700 100 0 FreeSans 480 90 0 0 bus12
+port 6 nsew
+flabel metal3 s 1800 0 1900 100 0 FreeSans 480 90 0 0 bus13
+port 7 nsew
+flabel metal2 s 2000 0 2100 100 0 FreeSans 480 90 0 0 bus20
+port 8 nsew
+flabel metal2 s 2200 0 2300 100 0 FreeSans 480 90 0 0 bus21
+port 9 nsew
+flabel metal2 s 2400 0 2500 100 0 FreeSans 480 90 0 0 bus22
+port 10 nsew
+flabel metal2 s 2600 0 2700 100 0 FreeSans 480 90 0 0 bus23
+port 11 nsew
+flabel metal3 s 2800 0 2900 100 0 FreeSans 480 90 0 0 clk
+port 12 nsew
+flabel metal1 800 0 900 100 1 FreeSans 400 0 0 0 VDPWR
+port 13 nsew power bidirectional
+flabel metal1 1000 0 1100 100 1 FreeSans 400 0 0 0 VGND
+port 14 nsew ground bidirectional
 << end >>
