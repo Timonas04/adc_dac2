@@ -102,10 +102,8 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 4 4"
-node="x1.xflash_adc_0.bit4_encoder_0/vpwr
-x1.flash_adc_0/bit4_encoder_0/vpwr
-ua"}
+
+}
 N 480 -350 500 -350 {
 lab=GND}
 N 500 -710 500 -370 {
@@ -116,7 +114,7 @@ C {code.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
 .tran 100p 1u
 .save all
 .lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /home/ttuser/Documents/github_project/adc_dac2/xschem/tt_um_tim2305_adc_dac.cir
+.include /home/ttuser/Documents/github_project/adc_dac2/mag/tt_um_tim2305_adc_dac.spice
 "}
 C {vsource.sym} 30 -480 0 0 {name=V3 value="pwl(0 0 1u 1.8)" savecurrent=false}
 C {lab_pin.sym} 30 -510 0 1 {name=p15 sig_type=std_logic lab=ua}
