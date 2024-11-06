@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3.6892547e-08
-x2=1.1119383e-06
+x1=0
+x2=1e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -38,8 +38,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3.6892547e-08
-x2=1.1119383e-06
+x1=0
+x2=1e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -59,8 +59,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3.6892547e-08
-x2=1.1119383e-06
+x1=0
+x2=1e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -83,8 +83,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3.6892547e-08
-x2=1.1119383e-06
+x1=0
+x2=1e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -98,38 +98,62 @@ logy=0
 
 
 
-color="12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 7"
-node="x1.compr_14/in-
-x1.compr_13/in-
-x1.compr_12/in-
-x1.compr_11/in-
-x1.compr_10/in-
-x1.compr_9/in-
-x1.compr_8/in-
-x1.compr_7/in-
-x1.compr_6/in-
-x1.compr_5/in-
-x1.compr_4/in-
-x1.compr_3/in-
-x1.compr_2/in-
-x1.compr_1/in-
-x1.compr_0/in-
-x1.compr_14/out
-x1.compr_13/out
-x1.compr_12/out
-x1.compr_11/out
-x1.compr_10/out
-x1.compr_9/out
-x1.compr_8/out
-x1.compr_7/out
-x1.compr_6/out
-x1.compr_5/out
-x1.compr_4/out
-x1.compr_3/out
-x1.compr_2/out
-x1.compr_1/out
-x1.compr_0/out
-ua"}
+
+
+color="7 4 4 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12"
+node="out_tst
+in-
+in+
+x1.xcompr2_0.m1_5641_1468#
+x1.xcompr2_0.m1_5235_668#
+x1.xcompr2_0.m1_3261_1010#
+x1.xcompr2_0.m1_2901_n838#
+x1.xcompr2_0.m1_1934_n647#
+x1.xcompr2_0.m1_740_n248#
+x1.compr2_0/m1_2901_n838#
+x1.compr2_0/m1_1934_n647#
+m.x1.xcompr2_0.xxm14.x0.msky130_fd_pr__nfet_01v8#sbody
+m.x1.xcompr2_0.xxm14.x0.msky130_fd_pr__nfet_01v8#dbody
+m.x1.xcompr2_0.xxm14.x0.msky130_fd_pr__nfet_01v8#body
+m.x1.xcompr2_0.xxm13.x0.msky130_fd_pr__pfet_01v8#sbody
+m.x1.xcompr2_0.xxm13.x0.msky130_fd_pr__pfet_01v8#dbody
+m.x1.xcompr2_0.xxm13.x0.msky130_fd_pr__pfet_01v8#body
+m.x1.xcompr2_0.xxm12.x0.msky130_fd_pr__nfet_01v8#sbody
+m.x1.xcompr2_0.xxm12.x0.msky130_fd_pr__nfet_01v8#dbody
+m.x1.xcompr2_0.xxm12.x0.msky130_fd_pr__nfet_01v8#body
+m.x1.xcompr2_0.xxm11.x0.msky130_fd_pr__pfet_01v8#sbody
+m.x1.xcompr2_0.xxm11.x0.msky130_fd_pr__pfet_01v8#dbody
+m.x1.xcompr2_0.xxm11.x0.msky130_fd_pr__pfet_01v8#body
+m.x1.xcompr2_0.xxm10.x0.msky130_fd_pr__pfet_01v8#sbody
+m.x1.xcompr2_0.xxm10.x0.msky130_fd_pr__pfet_01v8#dbody
+m.x1.xcompr2_0.xxm10.x0.msky130_fd_pr__pfet_01v8#body
+m.x1.xcompr2_0.xxm9.x0.msky130_fd_pr__pfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm9.x0.msky130_fd_pr__pfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm9.x0.msky130_fd_pr__pfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm8.x0.msky130_fd_pr__pfet_01v8#sbody
+m.x1.xcompr2_0.xxm8.x0.msky130_fd_pr__pfet_01v8#dbody
+m.x1.xcompr2_0.xxm8.x0.msky130_fd_pr__pfet_01v8#body
+m.x1.xcompr2_0.xxm7.x0.msky130_fd_pr__pfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm7.x0.msky130_fd_pr__pfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm7.x0.msky130_fd_pr__pfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm6.x0.msky130_fd_pr__pfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm6.x0.msky130_fd_pr__pfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm6.x0.msky130_fd_pr__pfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm5.x0.msky130_fd_pr__pfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm5.x0.msky130_fd_pr__pfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm5.x0.msky130_fd_pr__pfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm4.x0.msky130_fd_pr__nfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm4.x0.msky130_fd_pr__nfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm4.x0.msky130_fd_pr__nfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm3.x0.msky130_fd_pr__nfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm3.x0.msky130_fd_pr__nfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm3.x0.msky130_fd_pr__nfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm2.x0.msky130_fd_pr__nfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm2.x0.msky130_fd_pr__nfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm2.x0.msky130_fd_pr__nfet_01v8_lvt#body
+m.x1.xcompr2_0.xxm1.x0.msky130_fd_pr__nfet_01v8_lvt#sbody
+m.x1.xcompr2_0.xxm1.x0.msky130_fd_pr__nfet_01v8_lvt#dbody
+m.x1.xcompr2_0.xxm1.x0.msky130_fd_pr__nfet_01v8_lvt#body"}
 N 480 -350 500 -350 {
 lab=GND}
 N 500 -530 500 -370 {
@@ -140,10 +164,10 @@ C {code.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
 .tran 100p 1u
 .save all
 .lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /home/ttuser/Documents/github_project/adc_dac2/mag/tt_um_tim2305_adc_dac.spice
+.include /home/ttuser/Documents/github_project/adc_dac2/tt_um_tim2305_adc_dac.spice
 "}
 C {vsource.sym} 30 -480 0 0 {name=V3 value="pwl(0 0 1u 1.8)" savecurrent=false}
-C {lab_pin.sym} 30 -510 0 1 {name=p15 sig_type=std_logic lab=ua}
+C {lab_pin.sym} 30 -510 0 1 {name=p15 sig_type=std_logic lab=in-}
 C {title.sym} 170 -40 0 0 {name=l3 author="Timonas Juonys"}
 C {vsource.sym} 30 -590 0 0 {name=V2 value="pulse(0 1.8 0 100p 100p 10n 20n)" savecurrent=false}
 C {lab_pin.sym} 30 -620 0 1 {name=p4 sig_type=std_logic lab=clk}
@@ -154,7 +178,6 @@ C {/home/ttuser/Documents/github_project/adc_dac2/xschem/tile_pinout.sym} 650 -4
 schematic=tt_um_tim2305_adc_dac}
 C {lab_pin.sym} 500 -750 2 1 {name=p1 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 500 -730 2 1 {name=p3 sig_type=std_logic lab=clk}
-C {lab_pin.sym} 800 -750 0 1 {name=p16 sig_type=std_logic lab=ua}
 C {gnd.sym} 480 -350 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 500 -370 2 1 {name=p17 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 800 -270 0 1 {name=p5 sig_type=std_logic lab=bus0[0]}
@@ -173,10 +196,10 @@ C {launcher.sym} 1120 -290 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/top_tb.raw tran"
 }
-C {lab_pin.sym} 800 -610 0 1 {name=p20 sig_type=std_logic lab=ua}
-C {lab_pin.sym} 800 -630 0 1 {name=p21 sig_type=std_logic lab=ua2}
+C {lab_pin.sym} 800 -610 0 1 {name=p20 sig_type=std_logic lab=in-}
+C {lab_pin.sym} 800 -630 0 1 {name=p21 sig_type=std_logic lab=in+}
 C {vsource.sym} 160 -480 0 0 {name=V4 value="SIN(0.9 0.9 600k)" savecurrent=false}
-C {lab_pin.sym} 160 -510 0 1 {name=p25 sig_type=std_logic lab=ua2}
+C {lab_pin.sym} 160 -510 0 1 {name=p25 sig_type=std_logic lab=in+}
 C {gnd.sym} 160 -450 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 800 -650 0 1 {name=p22 sig_type=std_logic lab=out_tst}
 C {lab_pin.sym} 800 -350 0 1 {name=p23 sig_type=std_logic lab=uio_out[4]}

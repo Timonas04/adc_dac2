@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730889744
+timestamp 1730898015
 << metal4 >>
 rect 6134 44952 6194 45152
 rect 6686 44952 6746 45152
@@ -74,9 +74,9 @@ rect 200 1000 600 44152
 rect 800 39832 1200 44152
 rect 800 39512 1228 39832
 rect 800 1000 1200 39512
-rect 3314 0 3494 200
-rect 7178 0 7358 200
-rect 11042 0 11222 200
+rect 3314 0 3494 204
+rect 7178 0 7358 204
+rect 11042 0 11222 204
 rect 14906 0 15086 200
 rect 18770 0 18950 200
 rect 22634 0 22814 200
@@ -84,12 +84,68 @@ rect 26498 0 26678 200
 rect 30362 0 30542 200
 use bit4_encoder  bit4_encoder_0 ~/Documents/github_project/adc_dac2/mag
 timestamp 1730889744
-transform 1 0 1446 0 1 498
+transform 1 0 3400 0 1 2600
 box 0 0 9409 11553
-use main  main_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730889744
-transform 1 0 2382 0 1 13726
-box 0 0 27332 29476
+use compr2  compr2_0
+timestamp 1730896912
+transform 0 1 30003 -1 0 6375
+box 510 -1403 5975 1713
+use compr2  compr2_1
+timestamp 1730896912
+transform 0 1 26603 -1 0 6375
+box 510 -1403 5975 1713
+use compr2  compr2_2
+timestamp 1730896912
+transform 0 1 23203 -1 0 6375
+box 510 -1403 5975 1713
+use compr2  compr2_3
+timestamp 1730896912
+transform 0 1 19803 -1 0 6375
+box 510 -1403 5975 1713
+use compr2  compr2_4
+timestamp 1730896912
+transform 0 1 16403 -1 0 6375
+box 510 -1403 5975 1713
+use compr2  compr2_5
+timestamp 1730896912
+transform 0 1 30003 -1 0 12175
+box 510 -1403 5975 1713
+use compr2  compr2_6
+timestamp 1730896912
+transform 0 1 26603 -1 0 12175
+box 510 -1403 5975 1713
+use compr2  compr2_7
+timestamp 1730896912
+transform 0 1 23203 -1 0 12175
+box 510 -1403 5975 1713
+use compr2  compr2_8
+timestamp 1730896912
+transform 0 1 19803 -1 0 12175
+box 510 -1403 5975 1713
+use compr2  compr2_9
+timestamp 1730896912
+transform 0 1 16403 -1 0 12175
+box 510 -1403 5975 1713
+use compr2  compr2_10
+timestamp 1730896912
+transform 0 1 30003 -1 0 17975
+box 510 -1403 5975 1713
+use compr2  compr2_11
+timestamp 1730896912
+transform 0 1 26603 -1 0 17975
+box 510 -1403 5975 1713
+use compr2  compr2_12
+timestamp 1730896912
+transform 0 1 23203 -1 0 17975
+box 510 -1403 5975 1713
+use compr2  compr2_13
+timestamp 1730896912
+transform 0 1 19803 -1 0 17975
+box 510 -1403 5975 1713
+use compr2  compr2_14
+timestamp 1730896912
+transform 0 1 16403 -1 0 17975
+box 510 -1403 5975 1713
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input
