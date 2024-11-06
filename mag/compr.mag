@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730838366
+timestamp 1730882523
 << pwell >>
 rect 3422 508 3600 654
 rect 3128 -278 3276 -46
@@ -172,39 +172,39 @@ rect 1422 960 3308 1100
 rect 3308 942 3466 952
 rect 1274 892 1422 902
 use sky130_fd_pr__nfet_01v8_64Z3AY  XM1
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 3401 0 1 625
 box -211 -279 211 279
 use sky130_fd_pr__pfet_01v8_3H2EVM  XM3
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 1526 0 1 2167
 box -296 -1019 296 1019
 use sky130_fd_pr__nfet_01v8_lvt_AHMAL2  XM4
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 1528 0 1 292
 box -296 -610 296 610
 use sky130_fd_pr__nfet_01v8_lvt_AHRV9L  XM5
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 2114 0 1 292
 box -396 -610 396 610
 use sky130_fd_pr__nfet_01v8_lvt_AHRV9L  XM6
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 2800 0 1 292
 box -396 -610 396 610
 use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XM7
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 2112 0 1 2167
 box -396 -1019 396 1019
 use sky130_fd_pr__pfet_01v8_3H2EVM  XM8
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 3384 0 1 2167
 box -296 -1019 296 1019
 use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XM9
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 2798 0 1 2167
 box -396 -1019 396 1019
 use sky130_fd_pr__pfet_01v8_MGSNAN  XM21
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 3823 0 1 408
 box -211 -484 211 484
 << labels >>

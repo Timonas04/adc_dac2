@@ -1,22 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730879329
-<< error_s >>
-rect 12234 37877 12786 37911
-rect 12234 37333 12786 37367
-rect 7174 32437 7726 32471
-rect 6346 31893 6898 31927
-rect 7174 31893 7726 31927
-rect 11038 31893 11590 31927
-rect 6346 31349 6898 31383
-rect 11038 31349 11590 31383
-rect 12878 28629 13430 28663
-rect 12878 28085 13430 28119
-rect 4506 23733 5058 23767
-rect 4506 23189 5058 23223
-rect 12234 22101 12786 22135
-rect 12234 21557 12786 21591
+timestamp 1730882523
 << locali >>
 rect 24000 20548 24192 21250
 rect 24000 20494 26910 20548
@@ -1706,139 +1691,139 @@ rect 26498 0 26678 200
 rect 30362 87 31673 200
 rect 30362 0 30542 87
 use bit4_encoder  bit4_encoder_0
-timestamp 1730718415
+timestamp 1730882523
 transform 0 1 20296 -1 0 44963
 box 0 0 9409 11553
 use compr  compr_0
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 20398 -1 0 24630
 box 1230 -398 4034 3312
 use compr  compr_1
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 20408 -1 0 27618
 box 1230 -398 4034 3312
 use compr  compr_2
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 20408 -1 0 30618
 box 1230 -398 4034 3312
 use compr  compr_3
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 20408 -1 0 33628
 box 1230 -398 4034 3312
 use compr  compr_4
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 20408 -1 0 36628
 box 1230 -398 4034 3312
 use compr  compr_5
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 24384 -1 0 24630
 box 1230 -398 4034 3312
 use compr  compr_6
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 24384 -1 0 27630
 box 1230 -398 4034 3312
 use compr  compr_7
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 24384 -1 0 30618
 box 1230 -398 4034 3312
 use compr  compr_8
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 24384 -1 0 33628
 box 1230 -398 4034 3312
 use compr  compr_9
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 24384 -1 0 36618
 box 1230 -398 4034 3312
 use compr  compr_10
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 28390 -1 0 24630
 box 1230 -398 4034 3312
 use compr  compr_11
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 28390 -1 0 27630
 box 1230 -398 4034 3312
 use compr  compr_12
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 28390 -1 0 30618
 box 1230 -398 4034 3312
 use compr  compr_13
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 28400 -1 0 33618
 box 1230 -398 4034 3312
 use compr  compr_14
-timestamp 1730838366
+timestamp 1730882523
 transform 0 1 28390 -1 0 36628
 box 1230 -398 4034 3312
-use digital_core  digital_core_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730879329
-transform 1 0 1378 0 1 358
-box 0 0 18000 42000
+use main  main_0 ~/Documents/github_project/adc_dac2/mag
+timestamp 1730882523
+transform 1 0 1316 0 1 1588
+box 0 0 17789 35514
 use r2r_dac  r2r_dac_0
-timestamp 1730635755
+timestamp 1730882523
 transform 1 0 18960 0 1 20409
 box 1000 -5458 3772 -192
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR1
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 31199 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR2
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 29423 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR3
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 30903 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR4
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 31495 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR5
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 29719 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR6
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 27351 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR7
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 30311 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR8
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 28535 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR9
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 30607 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR10
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 30015 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR11
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 27055 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR12
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 28831 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR13
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 27647 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR14
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 27943 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR15
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 29127 0 1 19932
 box -201 -652 201 652
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR16
-timestamp 1730493024
+timestamp 1730882523
 transform 1 0 28239 0 1 19932
 box -201 -652 201 652
 << labels >>
