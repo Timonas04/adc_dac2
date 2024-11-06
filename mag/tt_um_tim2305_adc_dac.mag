@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730884862
+timestamp 1730885138
 << metal1 >>
 rect 29536 44108 29588 44114
 rect 29536 44050 29588 44056
@@ -390,6 +390,10 @@ rect 18770 0 18950 200
 rect 22634 0 22814 200
 rect 26498 0 26678 200
 rect 30362 0 30542 200
+use main  main_0 ~/Documents/github_project/adc_dac2/mag
+timestamp 1730885138
+transform 1 0 6324 0 1 4282
+box 0 0 17789 35514
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input
