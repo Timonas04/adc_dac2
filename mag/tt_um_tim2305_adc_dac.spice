@@ -518,10 +518,10 @@ XPHY_EDGE_ROW_2_Right_2 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
 X_84_ clknet_1_1__leaf_clk _06_ VGND VGND VPWR VPWR net20 sky130_fd_sc_hd__dfxtp_1
 X_67_ net34 _36_ _15_ VGND VGND VPWR VPWR _05_ sky130_fd_sc_hd__mux2_1
 XFILLER_6_22 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
-C0 VPWR _00_ 2.496267f
-C1 VPWR _36_ 2.108505f
-C2 clknet_1_1__leaf_clk VPWR 2.109072f
-C3 VPWR clknet_1_0__leaf_clk 2.060224f
+C0 clknet_1_0__leaf_clk VPWR 2.060224f
+C1 VPWR _00_ 2.496267f
+C2 VPWR clknet_1_1__leaf_clk 2.109072f
+C3 VPWR _36_ 2.108505f
 C4 _01_ VGND 3.226816f
 C5 _00_ VGND 2.658476f
 C6 VPWR VGND 92.371376f
@@ -529,187 +529,294 @@ C7 _15_ VGND 2.114687f
 C8 clknet_1_0__leaf_clk VGND 3.388226f
 .ends
 
+.subckt sky130_fd_pr__pfet_01v8_LGA5KQ a_n73_n564# a_n33_n661# a_15_n564# w_n211_n784#
++ VSUBS
+X0 a_15_n564# a_n33_n661# a_n73_n564# w_n211_n784# sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.15
+C0 w_n211_n784# VSUBS 2.85893f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_ATMSL9 a_n33_191# a_n73_n231# a_15_n231# a_n175_n343#
+X0 a_15_n231# a_n33_191# a_n73_n231# a_n175_n343# sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__res_xhigh_po_0p35_ABVTW2 a_n35_124# a_n165_n686# a_n35_n556#
+X0 a_n35_124# a_n35_n556# a_n165_n686# sky130_fd_pr__res_xhigh_po_0p35 l=1.4
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MGA5KJ a_n73_n636# a_15_n636# a_n33_595# w_n211_n784#
++ VSUBS
+X0 a_15_n636# a_n33_595# a_n73_n636# w_n211_n784# sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=0.15
+C0 w_n211_n784# VSUBS 2.85893f
+.ends
+
+.subckt r2r_dac out vdd b0 b1 b2 b3 b4 b5 b6 b7 vss
+XXM12 m1_2630_n3424# b2 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM14 m1_2920_n3426# b1 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM15 b0 m1_3220_n3424# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXM16 m1_3220_n3424# b0 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+Xsky130_fd_pr__nfet_01v8_ATMSL9_0 b1 m1_2920_n3426# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXR1 m1_1394_n2598# vss m1_1170_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR10 m1_1762_n4750# vss m1_2056_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR2 out vss m1_1170_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR11 m1_2326_n1634# vss m1_2056_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR3 m1_1060_n2596# vss out sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR5 vss vss m1_2946_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR12 m1_2056_n4750# vss m1_2354_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXM1 b7 m1_1060_n2596# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXR14 m1_2354_n4750# vss m1_2650_n4752# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR13 m1_2630_n3424# vss m1_2354_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR6 m1_1170_n4750# vss m1_1460_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR15 m1_2920_n3426# vss m1_2650_n4752# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR7 m1_1698_n2368# vss m1_1460_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXM3 b6 m1_1394_n2598# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXR16 m1_2650_n4752# vss m1_2946_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR8 m1_1460_n4750# vss m1_1762_n4750# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXM4 vdd m1_1394_n2598# b6 vdd vss sky130_fd_pr__pfet_01v8_MGA5KJ
+XXR17 m1_3220_n3424# vss m1_2946_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXR9 m1_2014_n2596# vss m1_1762_n4750# sky130_fd_pr__res_xhigh_po_0p35_ABVTW2
+XXM5 b5 m1_1698_n2368# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXM6 m1_1698_n2368# b5 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM7 b4 m1_2014_n2596# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+XXM8 m1_2014_n2596# b4 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM9 b3 m1_2326_n1634# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+Xsky130_fd_pr__pfet_01v8_LGA5KQ_0 m1_1060_n2596# b7 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM10 m1_2326_n1634# b3 vdd vdd vss sky130_fd_pr__pfet_01v8_LGA5KQ
+XXM11 b2 m1_2630_n3424# vss vss sky130_fd_pr__nfet_01v8_ATMSL9
+R0 m1_1060_n2596# m1_1060_n2596# sky130_fd_pr__res_generic_m2 w=0.32 l=0.09
+C0 vss 0 -10.099447f
+C1 vdd 0 15.611696f
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_BBNS5X a_15_n500# a_n175_n674# a_n73_n500# a_n33_n588#
+X0 a_15_n500# a_n33_n588# a_n73_n500# a_n175_n674# sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGA8MR a_n73_n1000# a_n33_n1097# w_n211_n1219# a_15_n1000#
++ VSUBS
+X0 a_15_n1000# a_n33_n1097# a_n73_n1000# w_n211_n1219# sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.15
+C0 w_n211_n1219# VSUBS 4.386f
+.ends
+
+.subckt pass_gate2 vdd ctrl a b vss
+XXM1 a vss b ctrl sky130_fd_pr__nfet_01v8_BBNS5X
+XXM2 b m1_3725_67# vdd a vss sky130_fd_pr__pfet_01v8_XGA8MR
+XXM3 vss ctrl m1_3725_67# vss sky130_fd_pr__nfet_01v8_648S5X
+XXM4 vdd m1_3725_67# vdd ctrl vss sky130_fd_pr__pfet_01v8_XGASDL
+XXM5 a m1_3725_67# vdd b vss sky130_fd_pr__pfet_01v8_XGA8MR
+XXM6 b m1_3725_67# vdd a vss sky130_fd_pr__pfet_01v8_XGA8MR
+XXM7 a m1_3725_67# vdd b vss sky130_fd_pr__pfet_01v8_XGA8MR
+XXM9 a vss b ctrl sky130_fd_pr__nfet_01v8_BBNS5X
+XXM8 b vss a ctrl sky130_fd_pr__nfet_01v8_BBNS5X
+XXM10 b vss a ctrl sky130_fd_pr__nfet_01v8_BBNS5X
+C0 ctrl vss 2.203909f
+C1 b vss 3.113493f
+C2 a vss 3.821888f
+C3 vdd vss 15.127268f
+.ends
+
 .subckt tt_um_tim2305_adc_dac clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5] ua[6]
 + ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0]
 + uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0]
 + uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0]
 + uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0]
-+ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR
-Xcompr2_4 VDPWR compr2_4/out ua[0] compr2_4/in- VDPWR compr2
-Xcompr2_5 VDPWR compr2_5/out ua[0] compr2_5/in- VDPWR compr2
-Xcompr2_6 VDPWR compr2_6/out ua[0] compr2_6/in- VDPWR compr2
-Xcompr2_7 VDPWR compr2_7/out ua[0] compr2_7/in- VDPWR compr2
-Xcompr2_8 compr2_8/vdd compr2_8/out ua[0] compr2_8/in- VDPWR compr2
-Xcompr2_9 VDPWR compr2_9/out ua[0] compr2_9/in- VDPWR compr2
-XXR20 m1_31573_19507# VDPWR m1_31280_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR1 compr2_9/in- VDPWR compr2_8/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR10 compr2_13/in- VDPWR compr2_12/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR2 compr2_3/in- VDPWR compr2_2/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR21 compr2_1/in- VDPWR compr2_0/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR11 compr2_11/in- VDPWR compr2_10/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR3 compr2_5/in- VDPWR compr2_4/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR22 VDPWR VDPWR compr2_0/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR VGND
+Xcompr2_4 VDPWR compr2_4/out ua[0] compr2_4/in- VGND compr2
+Xcompr2_5 VDPWR compr2_5/out ua[0] compr2_5/in- VGND compr2
+Xcompr2_6 VDPWR compr2_6/out ua[0] compr2_6/in- VGND compr2
+Xcompr2_7 VDPWR compr2_7/out ua[0] compr2_7/in- VGND compr2
+Xcompr2_8 VDPWR compr2_8/out ua[0] compr2_8/in- VGND compr2
+Xcompr2_9 VDPWR compr2_9/out ua[0] compr2_9/in- VGND compr2
+XXR20 m1_31573_19507# VGND m1_31280_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR1 compr2_9/in- VGND compr2_8/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR10 compr2_13/in- VGND compr2_12/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR21 compr2_1/in- VGND compr2_0/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR2 compr2_3/in- VGND compr2_2/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR11 compr2_11/in- VGND compr2_10/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR3 compr2_5/in- VGND compr2_4/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR22 VGND VGND compr2_0/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
 Xbit4_encoder_0 uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[6] clk compr2_0/out
 + compr2_11/out compr2_12/out compr2_13/out compr2_14/out compr2_1/out compr2_2/out
 + compr2_3/out compr2_4/out compr2_5/out compr2_6/out compr2_7/out compr2_8/out compr2_9/out
 + uio_out[0] uio_out[2] uo_out[5] uo_out[7] VDPWR uio_out[1] uio_out[3] compr2_10/out
-+ VDPWR bit4_encoder
-XXR23 m1_31276_18966# VDPWR m1_30980_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR12 compr2_11/in- VDPWR compr2_12/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR4 compr2_7/in- VDPWR compr2_8/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR5 compr2_7/in- VDPWR compr2_6/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_10 VDPWR compr2_10/out ua[0] compr2_10/in- VDPWR compr2
-XXR25 m1_30682_18966# VDPWR m1_30390_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR24 m1_30087_18963# VDPWR VDPWR sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR6 m1_30380_17760# VDPWR m1_30080_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR13 m1_29800_17760# VDPWR compr2_14/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR14 compr2_3/in- VDPWR compr2_4/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_11 VDPWR compr2_11/out ua[0] compr2_11/in- VDPWR compr2
-XXR26 m1_30682_18966# VDPWR m1_30980_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR7 compr2_5/in- VDPWR compr2_6/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR15 compr2_1/in- VDPWR compr2_2/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_12 VDPWR compr2_12/out ua[0] compr2_12/in- VDPWR compr2
-XXR27 m1_30087_18963# VDPWR m1_30390_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR8 compr2_13/in- VDPWR compr2_14/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR16 m1_29800_17760# VDPWR m1_30080_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_13 compr2_8/vdd compr2_13/out ua[0] compr2_13/in- VDPWR compr2
-XXR28 m1_31276_18966# VDPWR m1_31573_19507# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR17 m1_30380_17760# VDPWR m1_30680_18340# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR9 compr2_9/in- VDPWR compr2_10/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_14 VDPWR compr2_14/out ua[0] compr2_14/in- VDPWR compr2
-XXR18 m1_30980_17760# VDPWR m1_31280_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-XXR19 m1_30980_17760# VDPWR m1_30680_18340# sky130_fd_pr__res_xhigh_po_0p35_MGD972
-Xcompr2_0 VDPWR compr2_0/out ua[0] compr2_0/in- VDPWR compr2
-Xcompr2_1 VDPWR compr2_1/out ua[0] compr2_1/in- VDPWR compr2
-Xcompr2_2 VDPWR compr2_2/out ua[0] compr2_2/in- VDPWR compr2
-Xcompr2_3 VDPWR compr2_3/out ua[0] compr2_3/in- VDPWR compr2
-R0 VDPWR VDPWR sky130_fd_pr__res_generic_m2 w=163.095 l=4.42
-C0 compr2_7/in- compr2_4/in- 3.702237f
-C1 compr2_8/in- compr2_9/in- 5.784062f
-C2 compr2_3/in- VDPWR 2.714442f
-C3 compr2_11/out compr2_12/out 5.787934f
-C4 uo_out[0] clk 20.367323f
-C5 ua[0] compr2_6/out 2.312872f
-C6 uo_out[4] uo_out[5] 4.54456f
-C7 uo_out[6] uo_out[5] 21.065662f
-C8 compr2_7/out compr2_8/out 5.17263f
-C9 compr2_11/out compr2_10/out 7.833556f
-C10 ua[0] VDPWR 13.643934f
-C11 compr2_13/out compr2_12/out 3.949535f
-C12 VDPWR compr2_8/vdd 2.929931f
-C13 VDPWR compr2_4/in- 3.667559f
-C14 compr2_8/in- compr2_7/in- 5.304013f
-C15 VDPWR compr2_0/in- 3.4261f
-C16 uo_out[6] uo_out[7] 20.177666f
-C17 uo_out[0] uo_out[1] 16.9075f
-C18 uo_out[2] clk 13.020722f
-C19 compr2_12/in- compr2_9/in- 3.190273f
-C20 compr2_13/in- compr2_12/in- 3.718565f
-C21 uio_out[2] uio_out[1] 4.93017f
-C22 uo_out[5] uo_out[3] 14.75795f
-C23 compr2_7/out compr2_6/out 5.433138f
-C24 compr2_3/out compr2_4/out 3.319839f
-C25 uio_out[0] uio_out[1] 20.07018f
-C26 uo_out[6] uio_out[2] 2.120551f
-C27 compr2_9/out compr2_8/out 2.819033f
-C28 uo_out[4] uo_out[3] 5.55846f
-C29 uo_out[1] uo_out[4] 12.2487f
-C30 compr2_5/in- compr2_6/in- 3.549558f
-C31 VDPWR compr2_10/out 5.820962f
-C32 uio_out[0] uo_out[4] 15.567886f
-C33 uio_out[2] uo_out[7] 16.920782f
-C34 uo_out[2] uo_out[3] 20.613503f
-C35 compr2_3/out compr2_2/out 5.484728f
-C36 compr2_1/in- compr2_2/in- 4.897892f
-C37 compr2_3/in- compr2_2/in- 4.680415f
-C38 uo_out[2] uo_out[1] 6.714783f
-C39 compr2_5/out compr2_6/out 7.472055f
-C40 compr2_1/out compr2_2/out 8.143025f
-C41 uio_out[0] uo_out[7] 3.93013f
-C42 compr2_13/in- compr2_14/in- 5.164186f
-C43 compr2_3/in- compr2_4/in- 5.519886f
-C44 compr2_5/out VDPWR 5.358202f
-C45 compr2_1/in- compr2_0/in- 4.478142f
-C46 uio_out[3] uio_out[2] 23.926918f
-C47 compr2_0/out compr2_1/out 7.79377f
-C48 VDPWR compr2_1/in- 2.477239f
-C49 compr2_3/in- 0 2.151529f
-C50 compr2_3/m1_2901_n838# 0 2.135149f
-C51 compr2_3/m1_1934_n647# 0 4.789565f
-C52 compr2_3/m1_758_n1084# 0 5.184434f
-C53 compr2_3/out 0 2.117139f
-C54 compr2_2/m1_2901_n838# 0 2.135149f
-C55 compr2_2/m1_1934_n647# 0 4.789565f
-C56 compr2_2/m1_758_n1084# 0 5.184434f
-C57 compr2_2/out 0 2.241848f
-C58 compr2_1/m1_2901_n838# 0 2.135149f
-C59 compr2_1/m1_1934_n647# 0 4.789565f
-C60 compr2_1/m1_758_n1084# 0 5.184434f
-C61 compr2_1/out 0 2.439522f
-C62 compr2_0/in- 0 2.263589f
-C63 compr2_0/m1_2901_n838# 0 2.135149f
-C64 compr2_0/m1_1934_n647# 0 4.789565f
-C65 compr2_0/m1_758_n1084# 0 5.184434f
-C66 compr2_0/out 0 7.666957f
-C67 compr2_14/in- 0 2.751629f
-C68 compr2_14/m1_2901_n838# 0 2.135149f
-C69 compr2_14/m1_1934_n647# 0 4.789565f
-C70 compr2_14/m1_758_n1084# 0 5.184434f
-C71 compr2_13/in- 0 2.179639f
-C72 compr2_13/m1_2901_n838# 0 2.135149f
-C73 compr2_13/m1_1934_n647# 0 4.789565f
-C74 compr2_13/m1_758_n1084# 0 5.184434f
-C75 compr2_12/m1_2901_n838# 0 2.135149f
-C76 compr2_12/m1_1934_n647# 0 4.789565f
-C77 compr2_12/m1_758_n1084# 0 5.184434f
-C78 compr2_11/m1_2901_n838# 0 2.135149f
-C79 compr2_11/m1_1934_n647# 0 4.789565f
-C80 compr2_11/m1_758_n1084# 0 5.184434f
-C81 compr2_10/in- 0 2.175769f
-C82 compr2_10/m1_2901_n838# 0 2.135149f
-C83 compr2_10/m1_1934_n647# 0 4.789565f
-C84 compr2_10/m1_758_n1084# 0 5.184434f
-C85 VDPWR 0 0.639902p
-C86 compr2_10/out 0 2.860061f
-C87 uo_out[3] 0 3.238481f
-C88 uo_out[2] 0 3.736342f
-C89 uo_out[1] 0 3.286016f
-C90 uio_out[3] 0 10.633405f
-C91 clk 0 9.935383f
-C92 uo_out[0] 0 3.350226f
-C93 uio_out[2] 0 3.18052f
-C94 uio_out[1] 0 9.145207f
-C95 uio_out[0] 0 3.458244f
-C96 uo_out[7] 0 3.022712f
-C97 uo_out[6] 0 2.971547f
-C98 uo_out[5] 0 2.835897f
-C99 uo_out[4] 0 3.060942f
-C100 compr2_9/in- 0 2.195869f
-C101 compr2_9/m1_2901_n838# 0 2.135149f
-C102 compr2_9/m1_1934_n647# 0 4.789565f
-C103 compr2_9/m1_758_n1084# 0 5.184434f
-C104 compr2_9/out 0 2.621988f
-C105 compr2_8/vdd 0 69.2688f
-C106 compr2_8/m1_2901_n838# 0 2.135149f
-C107 compr2_8/m1_1934_n647# 0 4.789565f
-C108 compr2_8/m1_758_n1084# 0 5.184434f
-C109 compr2_7/m1_2901_n838# 0 2.135149f
-C110 compr2_7/m1_1934_n647# 0 4.789565f
-C111 compr2_7/m1_758_n1084# 0 5.184434f
-C112 compr2_6/in- 0 2.242629f
-C113 compr2_6/m1_2901_n838# 0 2.135149f
-C114 compr2_6/m1_1934_n647# 0 4.789565f
-C115 compr2_6/m1_758_n1084# 0 5.184434f
-C116 compr2_5/in- 0 2.116879f
-C117 compr2_5/m1_2901_n838# 0 2.135149f
-C118 compr2_5/m1_1934_n647# 0 4.789565f
-C119 compr2_5/m1_758_n1084# 0 5.184434f
-C120 compr2_5/out 0 2.137265f
-C121 compr2_4/in- 0 2.783149f
-C122 ua[0] 0 14.890268f
-C123 compr2_4/m1_2901_n838# 0 2.135149f
-C124 compr2_4/m1_1934_n647# 0 4.789565f
-C125 compr2_4/m1_758_n1084# 0 5.184434f
-C126 compr2_4/out 0 2.87436f
++ VGND bit4_encoder
+XXR23 m1_31276_18966# VGND m1_30980_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR12 compr2_11/in- VGND compr2_12/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR5 compr2_7/in- VGND compr2_6/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR4 compr2_7/in- VGND compr2_8/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_10 VDPWR compr2_10/out ua[0] compr2_10/in- VGND compr2
+XXR25 m1_30682_18966# VGND m1_30390_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR24 m1_30087_18963# VGND VDPWR sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR6 m1_30380_17760# VGND m1_30080_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR13 pass_gate2_0/a VGND compr2_14/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR14 compr2_3/in- VGND compr2_4/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_11 VDPWR compr2_11/out ua[0] compr2_11/in- VGND compr2
+XXR26 m1_30682_18966# VGND m1_30980_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR7 compr2_5/in- VGND compr2_6/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR15 compr2_1/in- VGND compr2_2/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_12 VDPWR compr2_12/out ua[0] compr2_12/in- VGND compr2
+XXR27 m1_30087_18963# VGND m1_30390_19510# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR16 pass_gate2_0/a VGND m1_30080_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR8 compr2_13/in- VGND compr2_14/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_13 VDPWR compr2_13/out ua[0] compr2_13/in- VGND compr2
+XXR28 m1_31276_18966# VGND m1_31573_19507# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR17 m1_30380_17760# VGND m1_30680_18340# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR9 compr2_9/in- VGND compr2_10/in- sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_14 VDPWR compr2_14/out ua[0] compr2_14/in- VGND compr2
+Xr2r_dac_0 r2r_dac_0/out VDPWR ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5]
++ ui_in[6] ui_in[7] VGND r2r_dac
+XXR18 m1_30980_17760# VGND m1_31280_18320# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+XXR19 m1_30980_17760# VGND m1_30680_18340# sky130_fd_pr__res_xhigh_po_0p35_MGD972
+Xcompr2_0 VDPWR compr2_0/out ua[0] compr2_0/in- VGND compr2
+Xpass_gate2_0 VDPWR uio_in[5] pass_gate2_0/a ua[0] VGND pass_gate2
+Xcompr2_1 VDPWR compr2_1/out ua[0] compr2_1/in- VGND compr2
+Xcompr2_2 VDPWR compr2_2/out ua[0] compr2_2/in- VGND compr2
+Xpass_gate2_1 VDPWR uio_in[4] ua[0] r2r_dac_0/out VGND pass_gate2
+Xcompr2_3 VDPWR compr2_3/out ua[0] compr2_3/in- VGND compr2
+R0 VDPWR VDPWR sky130_fd_pr__res_generic_m2 w=162.54 l=4.46
+C0 compr2_14/in- compr2_13/in- 5.164186f
+C1 compr2_7/out compr2_6/out 5.433138f
+C2 uo_out[6] uo_out[5] 21.065662f
+C3 compr2_2/out compr2_1/out 8.143025f
+C4 compr2_13/in- compr2_12/in- 3.718565f
+C5 compr2_4/in- compr2_3/in- 5.519886f
+C6 compr2_6/out ua[0] 2.312872f
+C7 compr2_4/out compr2_3/out 3.319839f
+C8 compr2_1/in- compr2_0/in- 4.478142f
+C9 uo_out[7] uo_out[6] 20.177666f
+C10 uio_out[2] uio_out[1] 4.93017f
+C11 compr2_8/out compr2_9/out 2.819033f
+C12 ui_in[7] ui_in[6] 12.559381f
+C13 compr2_0/out compr2_1/out 7.79377f
+C14 uio_in[5] uio_in[4] 13.195397f
+C15 ui_in[2] ui_in[1] 11.211813f
+C16 ui_in[5] ui_in[6] 13.145742f
+C17 compr2_9/in- compr2_8/in- 5.784062f
+C18 uo_out[3] uo_out[4] 5.55846f
+C19 ui_in[3] ui_in[4] 11.842255f
+C20 uo_out[1] uo_out[4] 12.2487f
+C21 uio_out[1] uio_out[0] 20.07018f
+C22 compr2_3/out compr2_2/out 5.484728f
+C23 uo_out[0] uo_out[1] 16.9075f
+C24 uo_out[0] clk 20.367323f
+C25 uo_out[4] uio_out[0] 15.567886f
+C26 compr2_3/in- compr2_2/in- 4.680415f
+C27 compr2_5/in- compr2_6/in- 3.549558f
+C28 compr2_9/in- compr2_12/in- 3.190273f
+C29 compr2_12/out compr2_11/out 5.787934f
+C30 VDPWR ua[0] 8.832046f
+C31 compr2_10/out compr2_11/out 7.833556f
+C32 compr2_4/in- compr2_7/in- 3.702237f
+C33 compr2_7/out compr2_8/out 5.17263f
+C34 ui_in[0] ui_in[1] 10.778433f
+C35 compr2_4/in- VDPWR 2.629473f
+C36 uo_out[6] uio_out[2] 2.120551f
+C37 uo_out[3] uo_out[5] 14.75795f
+C38 ui_in[7] uio_in[4] 11.074168f
+C39 ui_in[2] ui_in[3] 11.079957f
+C40 uo_out[5] uo_out[4] 4.54456f
+C41 uo_out[7] uio_out[2] 16.920782f
+C42 compr2_1/in- compr2_2/in- 4.897892f
+C43 compr2_6/out compr2_5/out 7.472055f
+C44 compr2_8/in- compr2_7/in- 5.304013f
+C45 uio_out[2] uio_out[3] 23.926918f
+C46 uo_out[7] uio_out[0] 3.93013f
+C47 uo_out[3] uo_out[2] 20.613503f
+C48 uo_out[1] uo_out[2] 6.714783f
+C49 compr2_12/out compr2_13/out 3.949535f
+C50 clk uo_out[2] 13.020722f
+C51 ui_in[5] ui_in[4] 12.332559f
+C52 compr2_3/in- VGND 3.067132f
+C53 compr2_3/m1_2901_n838# VGND 2.136418f
+C54 compr2_3/m1_1934_n647# VGND 4.808518f
+C55 compr2_3/m1_758_n1084# VGND 5.188664f
+C56 compr2_3/out VGND 2.157557f
+C57 uio_in[4] VGND 4.412521f
+C58 r2r_dac_0/out VGND 4.302329f
+C59 compr2_2/in- VGND 3.077564f
+C60 compr2_2/m1_2901_n838# VGND 2.136418f
+C61 compr2_2/m1_1934_n647# VGND 4.808518f
+C62 compr2_2/m1_758_n1084# VGND 5.188674f
+C63 compr2_2/out VGND 2.278103f
+C64 compr2_1/in- VGND 4.22984f
+C65 compr2_1/m1_2901_n838# VGND 2.136418f
+C66 compr2_1/m1_1934_n647# VGND 4.809944f
+C67 compr2_1/m1_758_n1084# VGND 5.223462f
+C68 compr2_1/out VGND 2.521003f
+C69 uio_in[5] VGND 9.320689f
+C70 pass_gate2_0/a VGND 6.292722f
+C71 compr2_0/in- VGND 5.006661f
+C72 compr2_0/m1_2901_n838# VGND 2.127079f
+C73 compr2_0/m1_1934_n647# VGND 4.808486f
+C74 compr2_0/m1_758_n1084# VGND 5.18581f
+C75 compr2_0/out VGND 7.693714f
+C76 ui_in[7] VGND 2.343738f
+C77 ui_in[0] VGND 5.54408f
+C78 compr2_14/in- VGND 4.527664f
+C79 compr2_14/m1_2901_n838# VGND 2.130999f
+C80 compr2_14/m1_1934_n647# VGND 4.789532f
+C81 compr2_14/m1_758_n1084# VGND 5.186149f
+C82 compr2_13/in- VGND 3.483147f
+C83 compr2_13/m1_2901_n838# VGND 2.128135f
+C84 compr2_13/m1_1934_n647# VGND 4.808486f
+C85 compr2_13/m1_758_n1084# VGND 5.190285f
+C86 compr2_13/out VGND 2.775688f
+C87 compr2_12/in- VGND 2.565556f
+C88 compr2_12/m1_2901_n838# VGND 2.130533f
+C89 compr2_12/m1_1934_n647# VGND 4.808486f
+C90 compr2_12/m1_758_n1084# VGND 5.190087f
+C91 compr2_12/out VGND 2.104142f
+C92 compr2_11/in- VGND 2.408316f
+C93 compr2_11/m1_2901_n838# VGND 2.130442f
+C94 compr2_11/m1_1934_n647# VGND 4.808486f
+C95 compr2_11/m1_758_n1084# VGND 5.191429f
+C96 compr2_10/in- VGND 2.890043f
+C97 compr2_10/m1_2901_n838# VGND 2.127103f
+C98 compr2_10/m1_1934_n647# VGND 4.808486f
+C99 compr2_10/m1_758_n1084# VGND 5.19171f
+C100 compr2_14/out VGND 2.254166f
+C101 VDPWR VGND 0.711655p
+C102 compr2_10/out VGND 7.486934f
+C103 uo_out[3] VGND 3.412119f
+C104 uo_out[2] VGND 4.652991f
+C105 uo_out[1] VGND 3.579798f
+C106 uio_out[3] VGND 10.996526f
+C107 clk VGND 9.28539f
+C108 uo_out[0] VGND 4.544979f
+C109 uio_out[2] VGND 3.550704f
+C110 uio_out[1] VGND 9.285095f
+C111 uio_out[0] VGND 4.237685f
+C112 uo_out[7] VGND 3.165119f
+C113 uo_out[6] VGND 3.292212f
+C114 uo_out[5] VGND 2.981818f
+C115 uo_out[4] VGND 4.284461f
+C116 compr2_9/in- VGND 3.60329f
+C117 compr2_9/m1_2901_n838# VGND 2.130999f
+C118 compr2_9/m1_1934_n647# VGND 4.789532f
+C119 compr2_9/m1_758_n1084# VGND 5.182593f
+C120 compr2_9/out VGND 2.804644f
+C121 compr2_8/in- VGND 2.638915f
+C122 compr2_8/m1_2901_n838# VGND 2.128135f
+C123 compr2_8/m1_1934_n647# VGND 4.808486f
+C124 compr2_8/m1_758_n1084# VGND 5.187021f
+C125 compr2_7/in- VGND 2.284711f
+C126 compr2_7/m1_2901_n838# VGND 2.130533f
+C127 compr2_7/m1_1934_n647# VGND 4.808486f
+C128 compr2_7/m1_758_n1084# VGND 5.186983f
+C129 compr2_6/in- VGND 3.304606f
+C130 compr2_6/m1_2901_n838# VGND 2.130441f
+C131 compr2_6/m1_1934_n647# VGND 4.811478f
+C132 compr2_6/m1_758_n1084# VGND 5.267684f
+C133 compr2_6/out VGND 2.274922f
+C134 compr2_5/in- VGND 2.964166f
+C135 compr2_5/m1_2901_n838# VGND 2.127103f
+C136 compr2_5/m1_1934_n647# VGND 4.808486f
+C137 compr2_5/m1_758_n1084# VGND 5.187019f
+C138 compr2_5/out VGND 6.238083f
+C139 compr2_4/in- VGND 3.880013f
+C140 ua[0] VGND 30.433434f
+C141 compr2_4/m1_2901_n838# VGND 2.13635f
+C142 compr2_4/m1_1934_n647# VGND 4.789565f
+C143 compr2_4/m1_758_n1084# VGND 5.184689f
+C144 compr2_4/out VGND 2.953565f
 .ends
 
