@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730887084
+timestamp 1730887867
 << metal4 >>
 rect 6134 44952 6194 45152
 rect 6686 44952 6746 45152
@@ -74,7 +74,6 @@ rect 200 1000 600 44152
 rect 800 39832 1200 44152
 rect 800 39512 1228 39832
 rect 800 1000 1200 39512
-rect 30390 200 30515 1894
 rect 3314 0 3494 200
 rect 7178 0 7358 200
 rect 11042 0 11222 200
@@ -83,10 +82,6 @@ rect 18770 0 18950 200
 rect 22634 0 22814 200
 rect 26498 0 26678 200
 rect 30362 0 30542 200
-use bit4_encoder  bit4_encoder_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730885837
-transform 1 0 12320 0 1 18326
-box 0 0 9409 11553
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input
