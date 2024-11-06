@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730882523
+timestamp 1730882763
 << locali >>
 rect 24000 20548 24192 21250
 rect 24000 20494 26910 20548
@@ -1754,10 +1754,6 @@ use compr  compr_14
 timestamp 1730882523
 transform 0 1 28390 -1 0 36628
 box 1230 -398 4034 3312
-use main  main_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730882523
-transform 1 0 1316 0 1 1588
-box 0 0 17789 35514
 use r2r_dac  r2r_dac_0
 timestamp 1730882523
 transform 1 0 18960 0 1 20409
