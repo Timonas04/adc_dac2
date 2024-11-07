@@ -48,8 +48,8 @@ pinout:
   uio[1]: "bus2[1]"
   uio[2]: "bus2[2]"
   uio[3]: "bus2[3]"
-  uio[4]: ""
-  uio[5]: ""
+  uio[4]: "dac_connect"
+  uio[5]: "adc_cal_connect"
   uio[6]: ""
   uio[7]: ""
 

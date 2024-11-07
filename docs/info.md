@@ -9,11 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-baud pins b0 and b1 select uart baud rate, mode pins m0 and m1 select operation mode. 
-the different modes cover convert received 8bit value to analog, send over the converted analog value via uart,
-set the register pointer (the project has 4 8 bit register not used for anything) and write to register. you can rad from register 
-by seting the register pointer, the value at that register will be sent over uart. the 4bit flash adc is always running at clock frequency,
-and its outputs are multiplexed to 3 4bit buses. see github for more documentation
+8 bit r2r dac
 
 ## How to test
 
