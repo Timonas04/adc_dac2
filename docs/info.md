@@ -17,7 +17,14 @@ by setting adc_cal_connect pin high. The output of the adc is multiplexed on 3 4
 
 ## How to test
 
-apply analog signal to ua[0], and read its value from the bus pins
+to test the dac:
+ set adc_connect = 1 and adc_cal_connect = 0
+ put your number on the 8 input pins and read the analog voltage
+
+to test the adc just clock the design and read the bus pins. you can use the internal dac or you can disconnect the dac
+and connect an external voltage source.
+
+
 
 ## External hardware
 

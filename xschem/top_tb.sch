@@ -19,7 +19,7 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="ua
+node="uao
 bus0[0]
 bus0[1]
 bus0[2]

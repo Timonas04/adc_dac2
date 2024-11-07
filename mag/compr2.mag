@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730933686
+timestamp 1730975828
 << nwell >>
 rect 2751 840 4479 1299
 rect 2642 802 4479 840
@@ -279,7 +279,7 @@ timestamp 1730931944
 transform 1 0 5268 0 1 221
 box -211 -619 211 619
 use sky130_fd_pr__nfet_01v8_648S5X  XM12 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730931944
+timestamp 1730975153
 transform 1 0 5285 0 1 -785
 box -211 -310 211 310
 use sky130_fd_pr__pfet_01v8_UGACMG  XM13
