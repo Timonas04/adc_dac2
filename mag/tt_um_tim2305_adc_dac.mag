@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730965390
+timestamp 1730965623
 << pwell >>
 rect 30680 18340 31040 18740
 rect 28020 17760 28380 18160
@@ -2305,18 +2305,6 @@ use compr2  compr2_14
 timestamp 1730933686
 transform 0 1 16403 -1 0 17975
 box 510 -1403 5975 1713
-use pass_gate2  pass_gate2_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730933686
-transform 1 0 21997 0 1 23096
-box 2195 -3712 4186 290
-use pass_gate2  pass_gate2_1
-timestamp 1730933686
-transform 1 0 24483 0 1 23096
-box 2195 -3712 4186 290
-use r2r_dac  r2r_dac_0 ~/Documents/github_project/adc_dac2/mag
-timestamp 1730882523
-transform 1 0 28000 0 1 25658
-box 1000 -5458 3772 -192
 use sky130_fd_pr__res_xhigh_po_0p35_MGD972  XR1
 timestamp 1730882523
 transform 1 0 28049 0 1 18252
