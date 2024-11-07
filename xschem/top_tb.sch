@@ -31,8 +31,8 @@ logx=0
 logy=0
 }
 B 2 1060 -1120 1860 -720 {flags=graph
-y1=-1.6e-05
-y2=1.9
+y1=0.7
+y2=1.4
 ypos1=0
 ypos2=2
 divy=5
@@ -44,7 +44,7 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=ua_dac
+node=uao
 color=4
 dataset=-1
 unitx=1
@@ -76,7 +76,7 @@ logx=0
 logy=0
 }
 B 2 1920 -720 2720 -320 {flags=graph
-y1=-0.009
+y1=-0.018
 y2=1.9
 ypos1=0
 ypos2=2
@@ -117,7 +117,7 @@ x1.compr2_3/in-
 x1.compr2_2/in-
 x1.compr2_1/in-
 x1.compr2_0/in-
-ua
+uao
 x1.compr2_14/out
 x1.compr2_13/out
 x1.compr2_12/out
@@ -177,7 +177,7 @@ C {launcher.sym} 1120 -290 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/top_tb.raw tran"
 }
-C {lab_pin.sym} 880 -750 0 1 {name=p21 sig_type=std_logic lab=ua}
+C {lab_pin.sym} 880 -750 0 1 {name=p21 sig_type=std_logic lab=uao}
 C {lab_pin.sym} 880 -350 0 1 {name=p23 sig_type=std_logic lab=uio_out[4]}
 C {lab_pin.sym} 880 -330 0 1 {name=p24 sig_type=std_logic lab=uio_out[5]}
 C {lab_pin.sym} 880 -310 0 1 {name=p26 sig_type=std_logic lab=uio_out[6]}
