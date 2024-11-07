@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 B 2 1060 -720 1860 -320 {flags=graph
-y1=-0.031
+y1=-0.019
 y2=1.9
 ypos1=0
 ypos2=2
@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.28e-06
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,15 +31,15 @@ logx=0
 logy=0
 }
 B 2 1060 -1120 1860 -720 {flags=graph
-y1=-0.00074
-y2=1.9
+y1=-0.014
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.28e-06
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -52,7 +52,7 @@ logx=0
 logy=0
 }
 B 2 1060 -1520 1860 -1120 {flags=graph
-y1=-0.00083
+y1=-0.015
 y2=1.9
 ypos1=0
 ypos2=2
@@ -60,7 +60,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.28e-06
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -71,9 +71,12 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 5"
-node="x1.sti_0/out
-x1.sti_0/in"}
+color="4 5 5 6 8"
+node="uao
+x1.sti_0/out
+x1.sti_0/in
+x1.r2r_dac_0/out
+b7"}
 B 2 1920 -720 2720 -320 {flags=graph
 y1=-0.024
 y2=1.9
@@ -83,7 +86,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=1.28e-06
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -139,7 +142,7 @@ lab=vdd}
 C {vsource.sym} 30 -360 0 0 {name=V1 value=1.8 savecurrent=false}
 C {lab_pin.sym} 30 -390 2 0 {name=p2 sig_type=std_logic lab=vdd}
 C {code.sym} 10 -220 0 0 {name=s1 only_toplevel=false value="
-.tran 100p 1.28u
+.tran 100p 500n
 .save all
 .lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /home/ttuser/Documents/github_project/adc_dac2/mag/tt_um_tim2305_adc_dac.spice
@@ -179,21 +182,21 @@ C {lab_pin.sym} 880 -350 0 1 {name=p23 sig_type=std_logic lab=uio_out[4]}
 C {lab_pin.sym} 880 -330 0 1 {name=p24 sig_type=std_logic lab=uio_out[5]}
 C {lab_pin.sym} 880 -310 0 1 {name=p26 sig_type=std_logic lab=uio_out[6]}
 C {lab_pin.sym} 880 -290 0 1 {name=p27 sig_type=std_logic lab=uio_out[6]}
-C {vsource.sym} 40 -960 0 0 {name=V7 value="pulse(0 1.8 0 100p 100p 5n 10n)" savecurrent=false}
+C {vsource.sym} 40 -960 0 0 {name=V7 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 40 -990 0 1 {name=p30 sig_type=std_logic lab=b0}
-C {vsource.sym} 40 -1060 0 0 {name=V8 value="pulse(0 1.8 0 100p 100p 10n 20n)" savecurrent=false}
+C {vsource.sym} 40 -1060 0 0 {name=V8 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 40 -1090 0 1 {name=p31 sig_type=std_logic lab=b1}
-C {vsource.sym} 40 -1160 0 0 {name=V9 value="pulse(0 1.8 0 100p 100p 20n 40n)" savecurrent=false}
+C {vsource.sym} 40 -1160 0 0 {name=V9 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 40 -1190 0 1 {name=p32 sig_type=std_logic lab=b2}
-C {vsource.sym} 40 -1260 0 0 {name=V10 value="pulse(0 1.8 0 100p 100p 40n 80n)" savecurrent=false}
+C {vsource.sym} 40 -1260 0 0 {name=V10 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 40 -1290 0 1 {name=p33 sig_type=std_logic lab=b3}
-C {vsource.sym} 300 -960 0 0 {name=V11 value="pulse(0 1.8 0 100p 100p 80n 160n)" savecurrent=false}
+C {vsource.sym} 300 -960 0 0 {name=V11 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 300 -990 0 1 {name=p34 sig_type=std_logic lab=b4}
-C {vsource.sym} 300 -1060 0 0 {name=V12 value="pulse(0 1.8 0 100p 100p 160n 320n)" savecurrent=false}
+C {vsource.sym} 300 -1060 0 0 {name=V12 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 300 -1090 0 1 {name=p35 sig_type=std_logic lab=b5}
-C {vsource.sym} 300 -1160 0 0 {name=V13 value="pulse(0 1.8 0 100p 100p 320n 640n)" savecurrent=false}
+C {vsource.sym} 300 -1160 0 0 {name=V13 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 300 -1190 0 1 {name=p37 sig_type=std_logic lab=b6}
-C {vsource.sym} 300 -1260 0 0 {name=V14 value="pulse(0 1.8 0 100p 100p 640n 1.28u)" savecurrent=false}
+C {vsource.sym} 300 -1260 0 0 {name=V14 value="pwl(0 0 200n 0 201n 1.8 )" savecurrent=false}
 C {lab_pin.sym} 300 -1290 0 1 {name=p38 sig_type=std_logic lab=b7}
 C {gnd.sym} 40 -930 0 0 {name=l7 lab=GND}
 C {gnd.sym} 40 -1030 0 0 {name=l8 lab=GND}
@@ -212,18 +215,18 @@ C {lab_pin.sym} 580 -610 0 0 {name=p42 sig_type=std_logic lab=b4}
 C {lab_pin.sym} 580 -590 0 0 {name=p43 sig_type=std_logic lab=b5}
 C {lab_pin.sym} 580 -570 0 0 {name=p44 sig_type=std_logic lab=b6}
 C {lab_pin.sym} 580 -550 0 0 {name=p45 sig_type=std_logic lab=b7}
-C {vsource.sym} 40 -850 0 0 {name=V4 value=1.8 savecurrent=false}
+C {vsource.sym} 40 -850 0 0 {name=V4 value=0 savecurrent=false}
 C {lab_pin.sym} 40 -880 0 1 {name=p16 sig_type=std_logic lab=dac_conn}
-C {vsource.sym} 300 -850 0 0 {name=V5 value=0 savecurrent=false}
+C {vsource.sym} 300 -850 0 0 {name=V5 value="pwl(0 0 400n 0 401n 1.8)" savecurrent=false}
 C {lab_pin.sym} 300 -880 0 1 {name=p20 sig_type=std_logic lab=res_conn}
 C {gnd.sym} 40 -820 0 0 {name=l6 lab=GND}
 C {gnd.sym} 300 -820 0 0 {name=l15 lab=GND}
 C {lab_pin.sym} 580 -430 0 0 {name=p22 sig_type=std_logic lab=res_conn}
 C {lab_pin.sym} 580 -450 0 0 {name=p25 sig_type=std_logic lab=dac_conn}
 C {lab_pin.sym} 580 -530 2 1 {name=p28 sig_type=std_logic lab=vdd}
-C {vsource.sym} 40 -750 0 0 {name=V6 value=0 savecurrent=false}
+C {vsource.sym} 40 -750 0 0 {name=V6 value="pwl(0 1.8 400n 1.8 401n 0)" savecurrent=false}
 C {lab_pin.sym} 40 -780 0 1 {name=p46 sig_type=std_logic lab=sti_conn}
-C {vsource.sym} 300 -750 0 0 {name=V15 value=0 savecurrent=false}
+C {vsource.sym} 300 -750 0 0 {name=V15 value="pwl(0 1.8 400n 1.8 401n 0)" savecurrent=false}
 C {lab_pin.sym} 300 -780 0 1 {name=p47 sig_type=std_logic lab=sti_dac_conn}
 C {gnd.sym} 40 -720 0 0 {name=l16 lab=GND}
 C {gnd.sym} 300 -720 0 0 {name=l17 lab=GND}
