@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1730882523
+timestamp 1730967974
 << pwell >>
 rect 1336 -2940 1368 -2886
 rect 1002 -3120 3340 -2940
@@ -381,8 +381,6 @@ rect 3220 -3414 3240 -3120
 rect 3314 -3412 3348 -3120
 rect 3314 -3414 3330 -3412
 rect 3220 -3424 3330 -3414
-<< rmetal2 >>
-rect 1112 -2990 1162 -2958
 use sky130_fd_pr__nfet_01v8_ATMSL9  sky130_fd_pr__nfet_01v8_ATMSL9_0
 timestamp 1730882523
 transform 1 0 3109 0 1 -2383
@@ -512,21 +510,21 @@ timestamp 1730882523
 transform -1 0 3275 0 1 -3538
 box -201 -722 201 722
 << labels >>
-flabel metal1 3374 -2034 3574 -1834 0 FreeSans 256 0 0 0 b0
+flabel space 3374 -2034 3574 -1834 0 FreeSans 256 0 0 0 b0
 port 2 nsew
 flabel metal1 3042 -2024 3242 -1824 0 FreeSans 256 0 0 0 b1
 port 3 nsew
-flabel metal1 2728 -2024 2928 -1824 0 FreeSans 256 0 0 0 b2
+flabel space 2728 -2024 2928 -1824 0 FreeSans 256 0 0 0 b2
 port 4 nsew
-flabel metal1 2404 -2018 2604 -1818 0 FreeSans 256 0 0 0 b3
+flabel space 2404 -2018 2604 -1818 0 FreeSans 256 0 0 0 b3
 port 5 nsew
-flabel metal1 2094 -2024 2294 -1824 0 FreeSans 256 0 0 0 b4
+flabel space 2094 -2024 2294 -1824 0 FreeSans 256 0 0 0 b4
 port 6 nsew
-flabel metal1 1772 -2018 1972 -1818 0 FreeSans 256 0 0 0 b5
+flabel space 1772 -2018 1972 -1818 0 FreeSans 256 0 0 0 b5
 port 7 nsew
 flabel metal1 1470 -2024 1670 -1824 0 FreeSans 256 0 0 0 b6
 port 8 nsew
-flabel metal1 1170 -2020 1370 -1820 0 FreeSans 256 0 0 0 b7
+flabel space 1170 -2020 1370 -1820 0 FreeSans 256 0 0 0 b7
 port 9 nsew
 flabel metal1 1586 -392 1786 -192 0 FreeSans 256 0 0 0 vdd
 port 1 nsew

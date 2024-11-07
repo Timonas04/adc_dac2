@@ -9,7 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-8 bit r2r dac
+8 bit r2r dac inputs are connected directlly to the digital input pins. its output can be connected to the analog pin by setting 
+the dac_connect pin high. the connection is made by a transmission gate. 4bit flash adc has an input range of 0-1 volts, it refference voltages
+are set by a resistive voltage divider. the upper bound (the top voltage) used by the divider can be connected to the analog pin for calibration
+by setting adc_cal_connect pin high. The output of the adc is multiplexed on 3 4 bit busses, this way the frequency on the digital outputs pins is
+3 times lower than the clock.
 
 ## How to test
 
