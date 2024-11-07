@@ -50,8 +50,8 @@ pinout:
   uio[3]: "bus2[3]"
   uio[4]: "dac_conn"
   uio[5]: "adc_cal_conn"
-  uio[6]: "sti1_conn"
-  uio[7]: "sti2_conn"
+  uio[6]: "sti_conn"
+  uio[7]: "sti_dac_conn"
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
   ua[0]: "a"
